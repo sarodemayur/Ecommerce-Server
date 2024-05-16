@@ -35,8 +35,8 @@ async function checkoutsession(req, res) {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "http://localhost:3000/success?redirectStatus=success", // URL to redirect to after successful payment
-      cancel_url: "http://localhost:3000//cancel?redirectStatus=cancel", // URL to redirect to after cancelled payment
+      success_url: "http://localhost:3000/success?redirectStatus=success", 
+      cancel_url: "http://localhost:3000//cancel?redirectStatus=cancel", 
     });
 
     res.json({ id: session.id });
